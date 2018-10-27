@@ -107,7 +107,7 @@ int main(void)
   {
 
   /* USER CODE END WHILE */
-	  char x[5];
+ 	  char x[6];
 
 	  while(HAL_UART_Receive(&huart2, (uint8_t *)&x, sizeof(x), 0xFFFF) != HAL_OK);
 
@@ -131,7 +131,7 @@ int main(void)
 	  HAL_UART_Transmit(&huart2, (uint8_t *)" ", 1, 0xFFFF);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)c, 2, 0xFFFF);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)" ", 1, 0xFFFF);
-	  HAL_UART_Transmit(&huart2, (uint8_t *)&e, 4, 0xFFFF);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)e, 4, 0xFFFF);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)" ", 1, 0xFFFF);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)"done", 4, 0xFFFF);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)" \n", 2, 0xFFFF);
