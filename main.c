@@ -107,6 +107,7 @@ int main(void)
   {
 
   /* USER CODE END WHILE */
+	  //Entered value must be 5 characters or else it will overflow to next entry
  	  char x[6];
 
 	  while(HAL_UART_Receive(&huart2, (uint8_t *)&x, sizeof(x), 0xFFFF) != HAL_OK);
